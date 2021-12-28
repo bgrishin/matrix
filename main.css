@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#matrix {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -200;
+}
+
+body {
+    background: black;
+}
+
+#close_button {
+    background:url('https://cdn-icons-png.flaticon.com/512/67/67345.png') center no-repeat; background-size: 100% 100%;
+    z-index: 300;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 100%;
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    transition: background-color 500ms;
+}
+
+#close_button:hover {
+    background-color: #c5c5c5;
+}
+
+#menu {
+    position: fixed;
+    padding-left: 10px;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    box-shadow: inset 0px 0px 5px black;
+    z-index: 200;
+    display: none;
+}
+
+#title {
+    font-family: 'Inconsolata', monospace;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#button {
+    position: fixed;
+    right: 20px;
+    height: 65px;
+    width: 65px;
+    padding: 10px;
+    border: none;
+    border-radius: 100%;
+    margin-top: 10px;
+    background:url("https://cdn4.iconfinder.com/data/icons/round-buttons/512/black_settings.png") center no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.4;
+    transition: opacity 200ms;
+}
+
+#button:hover {
+    opacity: 1;
+}
+
+#symbols {
+    height: 150px;
+    width: 300px;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+    margin: 20px 0px 10px 0px
+}
+
+#tip {
+    font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+    color: #838383;
+}
+
+textarea {
+    font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+    border-radius: 7px;
+    border-width: 2px;
+}
+
+#madeby {
+    font-family: 'Inconsolata', monospace;
+    margin: 20px 0px 10px 0px;
+    font-size: 15px;
+    color: #838383;
+}
