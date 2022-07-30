@@ -2,20 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Matrix</title>
+    <title>Matrix (old website)</title>
     <meta property="og:description" content="The Matrix">
     <meta property="og:site_name" content="matrix simulator">
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap" rel="stylesheet">
 </head>
-<body onmousemove="document.getElementById('button').style.display = 'block'" onmouseout="document.getElementById('button').style.display = 'none'">
+<body>
     <canvas id="matrix"></canvas>
     <script src="main.js"></script>
     <noscript><h1 style="color: white">Oops... Looks like you don't have JavaScript in your browser or it is disabled. Please turn it on, and then come back.</h1></noscript>
     <div id="menu">
         <span id="title">Settings</span>
-        <button id="close_button" onclick="hideMenu()"></button>
+        <button id="close_button"></button>
         <div>
+            <p>It seems you still managed to open this window. Well, I know that this menu is terrible because I wrote this website a long time ago. I think it will be redone soon, but for now you can poke the old menu. ;)</p>
             <h2 for="symbols">Symbols:</h2>
             <textarea id="symbols" oninput="updateCharacters()" placeholder="some words">アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ</textarea>
             <h2>Color:</h2>
@@ -29,6 +30,6 @@
             <h3 id="madeby">Made by Bogdan Grishin</h3>
         </div>
     </div>
-    <button id="button" onclick="showMenu()"></button>
+<!--     <button id="button" onclick="showMenu()"></button> -->
 </body>
 </html>
